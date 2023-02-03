@@ -1,0 +1,34 @@
+.columns-widget {
+  min-height: 50px;
+  margin-bottom: 20px;
+  background: #ffccc7;
+  position: relative;
+
+  &.active {
+    border: 2px solid #fa541c;
+  }
+
+  .columns-widget-wrap {
+    display: flex;
+
+    > .columns-widget-item {
+      background: #f0f0f0;
+      flex: 1;
+
+      &:not(:last-of-type) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .drag-handle {
+    z-index: 999;
+    position: absolute;
+    width: 16px;
+    height: 20px;
+    left: -24px;
+    border-radius: 4px;
+    top: 4px;
+    background: #95de64;
+  }
+}
